@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+</head>
+<!-- Head section ng HTML
+Dito kadalasan nilalagay ang CSS, title, links, scripts, etc. -->
+
+<!-- <body onload="initialize()"> -->
+<!-- Commented out ito
+Kapag hindi naka-comment, automatic tatawag ng initialize()
+pag fully loaded ang page -->
+
+<body>
+<!-- Body = lahat ng nakikita sa webpage -->
+
+<!--
+<h1 class="title">Hi!</h1>
+<button onclick="sayHello()">Click Me</button>
+-->
+<!-- Commented example:
+Pag clinick ang button, tatawagin ang function na sayHello() -->
+
+<!--
+<p onmouseover="hoverText()">HOVER ME??</p>
+<button onmouseover="hoverText()">HOVER ME</button>
+-->
+<!-- onmouseover = event
+Tatama ito kapag tinapat mo mouse sa element -->
+
+<!--
+<p onmouseout="unhoverText()" 
+onmouseover="hoverText()"
+onclick="clickText()">HOVER ME</p>
+-->
+<!-- Multiple events:
+onmouseover = kapag tinapat mouse
+onmouseout = kapag umalis mouse
+onclick = kapag clinick -->
+
+<!--
+<input type="text" onfocus="triggerFocus()"
+onblur="triggerBlur()">
+-->
+<!-- onfocus = kapag naclick/focus sa input
+onblur = kapag umalis focus -->
+
+<!--
+<input type="text" oninput="triggerInput()">
+<p>TYPE SOMETHING</p>
+-->
+<!-- oninput = bawat type ng letter -->
+
+<!--
+<input type="text" onchange="triggerChange()">
+<p>TYPE SOMETHING</p>
+-->
+<!-- onchange = gagana lang pag tapos magtype
+at umalis sa textbox -->
+
+<div>
+<!-- Container/div para sa registration form -->
+
+<br>
+<!-- line break -->
+
+<input type="firstname" id="firstname" placeholder="First Name">
+<!-- textbox for firstname -->
+<!-- id="firstname" gagamitin sa JS -->
+<!-- placeholder = text sa loob ng input -->
+
+<input type="lastname" id="lastname" placeholder="Last Name">
+<!-- textbox for lastname -->
+
+<label for="birthday">Birthday:</label>
+<!-- text label para sa birthday input -->
+
+<input type="date" id="birthday" name="birthday">
+<!-- Date picker -->
+
+<br>
+
+<select id="slcCountry">
+<!-- Dropdown/select menu -->
+
+<option value="Philippines">Philippines</option>
+<!-- Kapag pinili, value = Philippines -->
+
+<option value="Japan">Japan</option>
+<!-- Japan option -->
+
+<option value="Singapore">Singapore</option>
+<!-- Singapore option -->
+
+</select>
+
+<br>
+
+<input type="checkbox" id="chkAgree">
+<!-- Checkbox para sa privacy policy -->
+
+<label for="chkAgree">
+Agree to <b>Privacy Policy</b>
+</label>
+<!-- label ng checkbox -->
+<!-- <b> = bold text -->
+
+<br>
+
+<input type="radio" 
+name="sex" 
+id="rbMale" 
+value="Male">
+<!-- Radio button Male -->
+<!-- name="sex" para grouped sila -->
+
+<label for="rbMale">Male</label>
+
+<input type="radio" 
+name="sex" 
+id="rbFemale" 
+value="Female">
+<!-- Radio button Female -->
+
+<label for="rbFemale">Female</label>
+
+<br>
+
+<button onclick="signIn()">
+Sign In
+</button>
+<!-- Kapag pinindot ang button
+tatawagin ang function na signIn() -->
+
+</div>
+
+<hr/>
+<!-- Horizontal line separator -->
+
+<div>
+<!-- Lalagyan ng output/result -->
+
+<p id="lblFullName">
+FullName
+</p>
+<!-- Dito ilalagay fullname -->
+
+<p id="lblBirthday">
+Birthday
+</p>
+<!-- Dito ilalagay birthday -->
+
+<p id="lblCountry">
+Country
+</p>
+<!-- Dito ilalagay country -->
+
+<p id="lblSex">
+Sex
+</p>
+<!-- Dito ilalagay sex -->
+
+</div>
+
+
+    </body>
+    <script src="js15.js"></script>
+</html>

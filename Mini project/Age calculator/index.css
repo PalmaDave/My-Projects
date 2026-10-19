@@ -1,0 +1,133 @@
+/* Body = buong page.
+   Tinatanggal natin ang default margin at padding
+   para tayo ang mag-control ng spacing ng page. */
+body {
+    margin: 0;
+    padding: 0;
+
+    /* Background color ng buong page. */
+    background-color: #ce0909a8;
+}
+
+
+/* Container = pangunahing kahon kung saan ilalagay
+   ang form/content ng project. */
+.container {
+
+    /* Kulay ng loob ng main container. */
+    background-color: wheat;
+
+    /* Nagbibigay ng shadow sa paligid ng container
+       para magmukhang nakaangat ang kahon. */
+    box-shadow: 0 0 10px rgb(11, 7, 240);
+
+    /* Space sa loob ng container,
+       para hindi dikit ang content sa edges. */
+    padding: 20px;
+
+    /* Hindi lalampas sa 600px ang lapad ng container. */
+    max-width: 600px;
+
+    /* Pinapa-round ang corners ng container. */
+    border-radius: 10px;
+
+    /* Ginagawang automatic ang left/right margin
+       para mapunta sa gitna ang container. */
+    margin: auto;
+
+    /* Nagbibigay ng 75px na space mula sa taas ng page. */
+    margin-top: 75px;
+}
+
+
+/* .form = inaayos ang mga elements sa loob ng form. */
+.form {
+
+    /* Ginagawang flex container ang form. */
+    display: flex;
+
+    /* Inaayos ang elements nang patayo:
+       input → button → ibang elements. */
+    flex-direction: column;
+
+    /* Pinapagitna ang elements horizontally. */
+    align-items: center;
+}
+
+
+/* Input = design ng mga input box ng user. */
+input {
+
+    /* Space sa loob ng input para hindi dikit
+       ang text sa border. */
+    padding: 10px;
+
+    /* Nagbibigay ng manipis na border sa input. */
+    border: 1px solid #ccc;
+
+    /* Pinapa-round ang corners ng input. */
+    border-radius: 10px;
+
+    /* Ginagawang 100% ang available width. */
+    width: 100%;
+
+    /* Pero hindi lalampas sa 300px ang input. */
+    max-width: 300px;
+}
+
+
+/* Button = design ng button na pipindutin ng user. */
+button {
+
+    /* Background color ng button. */
+    background-color: #007bff;
+
+    /* Kulay ng text sa button. */
+    color: whitesmoke;
+
+    /* Tinatanggal ang default border ng button. */
+    border: none;
+
+    /* Space sa loob ng button. */
+    padding: 10px;
+
+    /* Pinapa-round ang corners ng button. */
+    border-radius: 10px;
+
+    /* Nagbibigay ng space sa taas ng button. */
+    margin-top: 10px;
+
+    /* Ginagawang pointer/hand ang cursor
+       kapag tinutukan ang button. */
+    cursor: pointer;
+
+    /* Gumagawa ng smooth transition kapag
+       nagbago ang background color. */
+    transition: background-color 0.3s ease;
+}
+
+
+/* :hover = kapag tinutukan ng mouse ang button,
+   magbabago ang background color. */
+button:hover {
+
+    /* Mas dark na blue kapag naka-hover. */
+    background-color: #0062cc;
+}
+
+
+/* #result = element kung saan ipapakita
+   ang result ng calculation/project. */
+#result {
+
+    /* Nagbibigay ng space sa taas ng result
+       para hindi dikit sa button/input. */
+    margin-top: 20px;
+
+    /* Pinapalaki ang text ng result. */
+    font-size: 24px;
+
+    /* Ginagawang bold ang result
+       para mas madaling makita. */
+    font-weight: bold;
+}

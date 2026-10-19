@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rosybrown;
+    font-family: Verdana;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+
+/* INPUT */
+input {
+    padding: 10px;
+    border: 1px solid #04e034;
+    border-radius: 10px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+/* TIP BUTTONS */
+.tip-buttons {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.tip-btn {
+    flex: 1;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tip-btn:hover {
+    background-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+
+
+#calculate {
+    background-color: #22c55e;
+}
+
+#calculate:hover {
+    background-color: #16a34a;
+}
+
+#reset {
+    background-color: #ef4444;
+}
+
+#reset:hover {
+    background-color: #dc2626;
+}
+
+#black {
+    background-color: #4e26dc;
+}
+
+#black:hover {
+    background-color: #4e26dc;
+}
+
+
+/* ERROR */
+#error-message {
+    color: #ef4444;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+
+/* RESULTS */
+#tip-amount,
+#total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    flex: 1;
+}
+
+#calculate,#black,
+#reset {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.dark-mode{
+    background-color: black;
+    color:rgb(221, 10, 10);
+}

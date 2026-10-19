@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="customer.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <span>🏠</span>
+
+        <h2>Apartment</h2>
+
+        <small>Customer Portal</small>
+
+    </div>
+
+
+    <nav>
+
+        <button
+            class="nav-btn active"
+            data-section="dashboard"
+        >
+            📊 Dashboard
+        </button>
+
+
+        <button
+            class="nav-btn"
+            data-section="room"
+        >
+            🚪 My Room
+        </button>
+
+
+        <button
+            class="nav-btn"
+            data-section="payments"
+        >
+            💰 Payments
+        </button>
+
+
+        <button
+            class="nav-btn"
+            data-section="profile"
+        >
+            👤 My Profile
+        </button>
+
+    </nav>
+
+
+    <button
+        id="logout-btn"
+        class="logout-btn"
+    >
+        🚪 Logout
+    </button>
+
+</aside>
+
+
+
+<main class="main-content">
+
+
+    <header class="topbar">
+
+        <div>
+
+            <h1 id="page-title">
+                Dashboard
+            </h1>
+
+            <p>
+                Welcome to your apartment portal.
+            </p>
+
+        </div>
+
+
+        <div class="user-info">
+
+            👤
+
+            <span id="customer-name">
+                Customer
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- DASHBOARD -->
+
+    <section
+        id="dashboard"
+        class="section active"
+    >
+
+        <div class="welcome-card">
+
+            <h2>
+                Welcome,
+                <span id="welcome-name">
+                    Customer
+                </span>
+                👋
+            </h2>
+
+            <p>
+                Here is your apartment information.
+            </p>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <span>
+                    My Room
+                </span>
+
+                <h2 id="dashboard-room">
+                    -
+                </h2>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Monthly Rent
+                </span>
+
+                <h2 id="dashboard-rent">
+                    ₱0
+                </h2>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Payment Status
+                </span>
+
+                <h2 id="dashboard-payment">
+                    -
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <h2>
+                Recent Payments
+            </h2>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Amount</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="recent-payments">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MY ROOM -->
+
+    <section
+        id="room"
+        class="section"
+    >
+
+        <div class="panel">
+
+            <h2>
+                My Room
+            </h2>
+
+
+            <div class="room-info">
+
+                <div>
+
+                    <span>
+                        Room Number
+                    </span>
+
+                    <strong id="room-number">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Room Type
+                    </span>
+
+                    <strong id="room-type">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Monthly Rent
+                    </span>
+
+                    <strong id="room-rent">
+                        ₱0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong id="room-status">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PAYMENTS -->
+
+    <section
+        id="payments"
+        class="section"
+    >
+
+        <div class="panel">
+
+            <h2>
+                Payment History
+            </h2>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Room</th>
+
+                            <th>Amount</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="payment-table">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROFILE -->
+
+    <section
+        id="profile"
+        class="section"
+    >
+
+        <div class="panel">
+
+            <h2>
+                My Profile
+            </h2>
+
+
+            <div class="profile-info">
+
+                <p>
+
+                    <strong>Name:</strong>
+
+                    <span id="profile-name">
+                    </span>
+
+                </p>
+
+
+                <p>
+
+                    <strong>Email:</strong>
+
+                    <span id="profile-email">
+                    </span>
+
+                </p>
+
+
+                <p>
+
+                    <strong>Role:</strong>
+
+                    <span>
+                        Customer
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<script src="customer.js"></script>
+
+</body>
+
+</html>

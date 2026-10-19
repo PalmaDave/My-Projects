@@ -1,0 +1,160 @@
+/* ================= BUTTON STATES EXAMPLE ================= */
+
+/*
+button{
+    background-color:aquamarine;  
+    // Default na kulay ng button kapag hindi pa na-aapektuhan ng hover, active, etc.
+
+    transition:1s;  
+    // Lahat ng changes sa button ay magiging smooth sa loob ng 1 second.
+}
+
+button:hover{
+    background-color:red;  
+    // Nagbabago ang kulay kapag tinapat ang mouse (hover).
+
+    color:white;  
+    // Nagbabago ang text color kapag hover.
+}
+
+button:active{
+    background-color:blue;  
+    // Nagbabago ang kulay habang pinipindot ang button.
+
+    color:aqua;  
+    // Text color habang naka-click.
+}
+
+button:disabled{
+    opacity:0.2;  
+    // Ginagawang faded ang button kapag disabled.
+
+    background-color:red;  
+    // Kulay ng button kapag disabled.
+}
+*/
+
+
+/* ================= INPUT STATES EXAMPLE ================= */
+
+/*
+input:focus{
+    border:2px solid pink;  
+    // Border kapag naka-click o naka-focus ang input.
+
+    outline:none;  
+    // Tinatanggal ang default outline ng browser.
+
+    background-color:blue;  
+    // Nagbabago ang background kapag focus.
+}
+
+.txtName{
+    border:2px solid pink;  
+    // Style para sa input na may class="txtName".
+
+    outline:none;  
+    // Walang outline.
+
+    background-color:aquamarine;  
+    // Background color.
+}
+
+input:checked{
+    scale:1.5;  
+    // Pinapalaki ang checkbox o radio button kapag naka-check.
+}
+*/
+
+
+/* ================= TRANSITION EXAMPLE ================= */
+
+/*
+.btn1{
+    background-color:blue;  
+    // Initial background color.
+
+    transition:linear 1s;  
+    // Animation na 1 second gamit ang linear effect.
+    // (Pantay ang galaw mula simula hanggang dulo.)
+
+    transition: width 3s, background-color 0.2s;  
+    // Width mag-aanimate ng 3 seconds.
+    // Background-color mag-aanimate ng 0.2 seconds.
+
+    width:100px;  
+    // Default width ng button.
+}
+
+button:hover{
+    background-color:tomato;  
+    // Kulay kapag hover.
+
+    width:200px;  
+    // Lalapad kapag hover.
+}
+
+.btn2{
+    background-color:blue;  
+    // Initial background.
+
+    transition:ease 1s;  
+    // Animation na 1 second gamit ang ease.
+    // (Mabagal sa simula, bibilis sa gitna, mabagal sa dulo.)
+
+    width:100px;  
+    // Default width.
+}
+
+button:hover{
+    background-color:tomato;  
+    // Hover color.
+
+    width:200px;  
+    // Hover width.
+}
+*/
+
+
+/* ================= TRANSFORM EXPLANATION ================= */
+
+/*
+transform: scale(1.05);
+
+scale():
+1 = normal size
+1.05 = 5% na mas malaki
+
+Ginagamit ito para palakihin ang element kapag hover.
+*/
+
+
+/*
+transition: transform 0.2s;
+
+Ibig sabihin:
+Ang transform property ay mag-aanimate sa loob ng 0.2 seconds.
+Ginagawa itong smooth kapag may scale, rotate, o move.
+*/
+
+
+/* ================= FINAL TRANSITION EXAMPLE (ACTIVE CODE) ================= */
+
+.btn1{
+    background-color:blue;  
+ /* // Default color.*/
+
+    width:100px;  
+  /* Initial width.*/
+
+    transition: width 3s linear 1s, background-color 2s;  
+   
+}
+
+button:hover{
+    background-color:tomato;  
+    /* Nagbabago ang kulay kapag hover.*/
+
+    width:200px;  
+    /* Lumalapad kapag hover.*/
+}

@@ -1,0 +1,52 @@
+/* ================= BOX SHADOW EXAMPLE ================= */
+
+/*
+.container{
+    height:100px;             // Taas ng container
+
+    width:200px;              // Lapad ng container
+
+    box-shadow:3px 3px 5px black inset; 
+    // Gumagawa ng shadow sa loob ng box
+
+    // 3px = pakanan ang shadow (horizontal)
+    // 3px = pababa ang shadow (vertical)
+    // 5px = blur ng shadow
+    // black = kulay ng shadow
+    // inset = shadow nasa loob ng box
+
+    border:1px solid black;   // Border ng container
+}
+*/
+
+
+/* ================= MULTIPLE BOX SHADOW ================= */
+
+.container{
+
+    height:100px;  
+    /* Taas ng container */
+
+    width:200px;   
+    /* Lapad ng container */
+
+    box-shadow:2px 2px 5px 2px red, -2px -2px 5px 2px blue, 2px -2px 5px 2px yellow;  
+    /* Multiple shadows sa isang element
+
+       2px 2px 5px 2px red
+       2px = pakanan ang shadow
+       2px = pababa ang shadow
+       5px = blur
+       2px = spread (laki ng shadow)
+       red = kulay
+
+       -2px -2px 5px 2px blue
+       negative value = pakaliwa at pataas ang shadow
+
+       2px -2px 5px 2px yellow
+       pakanan at pataas ang shadow
+    */
+
+    border-radius:5px;  
+    /* Ginagawang rounded ang corners ng container */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div  class="weather-app"> <!--pinaka labas na container may class para pag nag style buong app--> 
+
+        <!-- Header & Search Section -->
+        <div class="search-box">  <!-- ito yung input at button may class para sabay sila style -->
+
+        <!--input type ibigsabehin pwede ka magtype--> <!--id=city Kapag nag-search ang user 
+        madaling makuha ng JS ang value ng input -->  <!-- placeholder yung text na gray sa loob -->
+        <!--autocomple is hindi lalabas ang suggestion ng browser o pinapatay ang browser ng autocomplete -->
+            <input type="text" id="city" placeholder="Enter city name..." autocomplete="off">
+            <!--para sa js gagamit ako ng addEventlistner-->
+            <button id="search-btn">Search</button>
+        </div>
+          <!-- Error Handling Display  -->
+
+          <!--id error ginagamit para makuha ang js error message-->
+        <div id="error-message" class="hidden">
+            <p>City not found... Please try again bro bro..</p>
+        </div>
+
+         <!--buong weather information  -->
+        <!--habang wala pang sinisearch-->
+        <div id="weather-info" class="weather-details">
+            <div class="location">  <!-- ang class madalas sa CSS  -->  <!--div class=container lang magkasama sila london at friday -->
+                <h2 id="city-name"></h2>  <!-- ang id madalas sa  JS  -->
+                <p id="date"></p>
+            </div>
+        
+
+          <div class="current-weather">  <!--containter  -->
+
+          <!-- img id weather icon pinapalitan ng JS ang icon depende sa weather-->
+            <img id="weather-icon" src="icon.jpg" alt="weather condition"> 
+            <h2 id="temperature"></h2>  <!--Kapag may data na galing sa API, papalitan ng JavaScript ang temperature-->
+            <p id="description"></p>  <!--clouds,sunny,rain-->
+          </div>
+
+          <div class="extra-metrics">
+             <div class="metric-item">
+                <span class="label">Humidity</span>
+                <span id="humidity"></span>
+             </div>
+
+             <div class="metric-item"> 
+                <span class="label">Wind Speed</span>
+                <span id="wind-speed"></span>
+             </div>
+          </div>
+        </div>
+    </div>
+
+
+</body>
+    <script src="index.js"></script>
+</html>

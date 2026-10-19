@@ -1,0 +1,10 @@
+.comment{  /*class*/
+    background:red;
+}
+div{
+    color:white;
+    background:blue;
+}
+#post{ /*ID*/
+    background:green;
+}

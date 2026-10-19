@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- Sinasabi sa browser na HTML5 ang gamit -->
+
+<html lang="en"> <!-- Simula ng HTML document, English ang language -->
+<head>
+
+    <meta charset="UTF-8"> <!-- Para suportado ang special characters -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive design para maayos sa mobile -->
+
+    <title>Game | Rock Paper Scissors</title>
+    <!-- Pangalan ng tab sa browser -->
+
+    <link rel="stylesheet" href="rock.css">
+    <!-- I-connect ang CSS file -->
+
+</head>
+
+<body>
+
+    <section class="container">
+        <!-- Main game container -->
+
+        <div class="result_field">
+            <!-- Lalagyan ng images at result text -->
+
+            <div class="result_images">
+                <!-- Container ng User at CPU images -->
+
+                <span class="user_result">
+                    <!-- User result area -->
+
+                    <img src="images/rock.png" alt="">
+                    <!-- Default image ng user -->
+                </span>
+
+                <span class="cpu_result">
+                    <!-- CPU result area -->
+
+                    <img src="images/rock.png" alt="">
+                    <!-- Default image ng CPU -->
+                </span>
+
+            </div>
+
+            <div class="result">
+                Let's Play!!
+            </div>
+            <!-- Dito lalabas ang result text -->
+
+        </div>
+
+        <div class="option_images">
+            <!-- Mga pagpipilian ng player -->
+
+            <span class="option_image active">
+                <!-- Rock option -->
+                <!-- active = naka-highlight sa umpisa -->
+
+                <img src="images/rock.png" alt="">
+                <p>Rock</p>
+            </span>
+
+            <span class="option_image">
+                <!-- Paper option -->
+
+                <img src="images/paper.png" alt="">
+                <p>Paper</p>
+            </span>
+
+            <span class="option_image">
+                <!-- Scissors option -->
+
+                <img src="images/scissors.png" alt="">
+                <p>Scissors</p>
+            </span>
+
+        </div>
+
+    </section>
+
+    <script src="rock.js"></script>
+    <!-- I-connect ang JavaScript file -->
+
+</body>
+</html>

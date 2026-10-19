@@ -1,0 +1,123 @@
+/* Universal Selector: Lahat ng elements ay apektado nito */
+* { 
+    margin: 0; /* tinatanggal ang default na space sa labas ng lahat ng elements */
+    padding: 0; /* tinatanggal ang default na space sa loob ng lahat ng elements */
+    box-sizing: border-box; /* sinisigurado na hindi lalampas sa size kahit may padding */
+}
+
+/* Pag-aayos ng buong screen */
+body {
+    height: 100vh; /* ginagawang full screen height ang page */
+    display: flex; /* ginagawang flexbox para madaling i-center ang content */
+    align-items: center; /* ini-center vertically (taas-baba) */
+    justify-content: center; /* ini-center horizontally (kaliwa-kanan) */
+    background-color: white; /* light gray background */
+    font-family: Arial, sans-serif; /* default font ng buong page */
+}
+
+/* Container ng lahat ng elements */
+.container {
+    text-align: center; /* ini-center ang text sa loob */
+    position: relative; /* para ma-control ang position ng child elements */
+}
+
+/* Facebook Title Style */
+h1 {
+    margin: 20px 0px; /* space sa taas at baba ng title */
+    color: #1877f2; /* Facebook blue color */
+    font-weight: bold; /* ginagawang makapal ang text */
+    font-size: 40px; /* laki ng Facebook title */
+}
+
+/* Ang Puting Login Box */
+.login {
+    display: flex; /* ginagawang flex container */
+    flex-direction: column; /* pinapatayo ang layout (pababa) */
+    width: 300px; /* lapad ng login box */
+    padding: 15px; /* space sa loob ng box */
+    border-radius: 15px; /* ginagawang rounded ang corners */
+    background-color: purple; /* puting background */
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1); /* anino sa paligid ng box */
+}
+
+.login p{
+    color:white;
+}
+/* Instruction Text */
+p {
+    margin: 10px 0px; /* space sa taas at baba ng paragraph */
+}
+
+/* Input Boxes Style */
+input {
+    margin: 5px 0px; /* space sa pagitan ng input fields */
+    height: 40px; /* taas ng input box */
+    padding: 7px; /* space sa loob ng input */
+}
+
+/* Login Button Style */
+button {
+    height: 40px; /* taas ng button */
+    margin: 5px 0px; /* space sa taas at baba ng button */
+    background-color: #1877f2; /* blue button color */
+    color: #fff; /* puting text */
+    border: none; /* tinatanggal ang default border */
+    border-radius: 5px; /* rounded corners */
+    font-weight: bold; /* makapal na text */
+    /* kulang dito: cursor pointer (para maging hand icon) */
+    cursor: pointer; /* Ito yung magpapalit ng mouse cursor na parang kamay */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #126bdf; /* mas dark na blue kapag naka-hover */
+}
+
+/* Link Style */
+a {
+    font-size: 11px; /* maliit na text size */
+    text-decoration: none; /* tinatanggal underline */
+    color: #1877f2; /* blue color ng links */
+}
+
+/* Link hover effect */
+a:hover {
+    text-decoration: underline; /* lalabas underline kapag hover */
+}
+
+/* Input wrapper (para sa floating label effect) */
+.input-box {
+    position: relative; /* para ma-position ang label sa loob */
+    margin: 10px 0; /* space sa taas at baba */
+}
+
+/* input field sa loob ng input-box */
+.input-box input {
+    width: 100%; /* full width ng container */
+    height: 40px; /* taas ng input */
+    padding: 10px; /* space sa loob */
+    border: 1px solid #ccc; /* gray border */
+    outline: none; /* tinatanggal blue outline kapag focus */
+    border-radius: 5px; /* rounded edges */
+}
+
+/* label ng input */
+.input-box label {
+    position: absolute; /* inilalagay sa ibabaw ng input */
+    left: 10px; /* distansya sa kaliwa */
+    top: 50%; /* gitna vertically */
+    transform: translateY(-50%); /* eksaktong center alignment */
+    color: gray; /* kulay gray ng label */
+    transition: 0.2s; /* smooth animation kapag gumalaw */
+    pointer-events: none; /* hindi clickable ang label */
+    background: white; /* para di matakpan ng input line */
+    padding: 0 5px; /* space sa paligid ng text */
+}
+
+/* FLOAT EFFECT (label umaangat kapag may focus or may laman) */
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: 0; /* inaangat ang label pataas */
+    font-size: 12px; /* pinapaliit ang text */
+    color: #1877f2; /* nagiging blue ang label */
+}

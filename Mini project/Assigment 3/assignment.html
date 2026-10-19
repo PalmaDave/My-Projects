@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+   <style>
+
+       *{
+        margin:0; padding:0; box-sizing: border-box;
+       }
+
+       body{
+        display:flex; 
+        justify-content:center; 
+        align-items:center; 
+        min-height:100vh;
+       }
+
+       .Calculator-main{
+        width:300px;
+        height:450px; 
+        background-color:#4553a1; 
+        border-radius: 20px; 
+        padding:10px;
+        box-shadow: 10px 10px 10px rgba(223, 88, 88, 0.918);
+       }
+
+        #Display-screen{
+        width:100%;
+        height:40px;
+        background-color:#0e0d0d67;
+        color:white;
+        border-radius:10px;
+        font-size:1.5rem;
+        display:flex;
+        justify-content:flex-end; /*nilalagay ang laman sa pinakadulong kanan.*/
+        align-items:center;
+        padding:10px;
+        margin-bottom:30px;
+        }
+
+       .button-row{
+        display: grid; 
+        grid-template-columns: repeat(4,1fr); 
+        gap:10px;
+        margin-bottom:15px;
+       }
+
+       button{
+        height:50px; 
+        border-radius:20px;
+        border:none;
+        background-color:#1b171767;
+        color:white;
+        font-size:1.5rem;
+        cursor: pointer;
+       }
+     
+      .round-btn:hover{
+        background-color:gold;
+       }
+
+      .square-btn:hover{
+        background-color:red;
+       }
+   </style>
+
+<body>
+    <div class="Calculator-main">
+        <div id="Display-screen">
+            <p id="Display-text">0</p>
+        </div>
+
+        <div id="buttons-container">
+            
+            <!-- Row 1 ng mga Buttons -->
+            <div class="button-row">
+                <button class="square-btn">+</button>
+                <button class="round-btn">7</button>
+                <button class="round-btn">8</button>
+                <button class="round-btn">9</button>
+            </div>
+           
+            <!-- Row 2 ng mga Buttons -->
+            <div class="button-row">
+              <button class="square-btn">-</button>
+              <button class="round-btn">4</button>
+              <button class="round-btn">5</button>
+              <button class="round-btn">6</button>    
+          </div>
+         
+          <!-- Row 3 ng mga Buttons -->
+          <div class="button-row">
+          <button class="square-btn">*</button>
+          <button class="round-btn">1</button>
+          <button class="round-btn">2</button>
+          <button class="round-btn">3</button>
+          </div>
+
+          <!-- Row 4 ng mga Buttons -->
+          <div class="button-row">
+            <button class="square-btn">/</button>
+            <button class="round-btn">AC</button>
+            <button class="round-btn">0</button>
+            <button class="round-btn">=</button>
+            <button class="round-btn">C</button>
+          </div>
+
+        </div>
+    </div>
+</body>
+  <script>
+  const buttons = document.querySelectorAll('button');
+    const display = document.getElementById('Display-text');
+
+    buttons.forEach(button => {
+    button.addEventListener('click',()=>{
+        const value = button.textContent;
+     
+        // STYLE //
+        if(value === "+"){
+            alert("Plus Selected");
+            display.style.color = "#ff0000";
+        }else if(value === "-"){
+            alert("Minus Selected");
+            display.style.color = "#ffc800";
+        }else if(value === "*"){
+            alert("Times Selected");
+            display.style.color = "#ff1493";
+        }else if(value === "/"){
+            alert("Divide Selected");
+            display.style.color = "#7fffd4";
+        }
+         
+      // CONTENT //
+     
+      if(value === "AC"){
+        display.textContent = "0";
+      }else if(value === "C"){
+        display.textContent = display.textContent.slice(0,-1);
+        if(display.textContent === ""){
+            display.textContent = "0";
+        }
+      }else if(value === "="){
+        
+        try{
+            display.textContent = eval(display.textContent);
+        }catch(error){
+            display.textContent = "Mali";
+        }
+      }else{
+        if(display.textContent === "0"){
+            display.textContent = value;
+        }else{
+            display.textContent += value;
+        }
+      }
+    });
+    });
+
+  </script>
+</html>

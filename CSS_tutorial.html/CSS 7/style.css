@@ -1,0 +1,67 @@
+body{
+    margin: 0;  
+    /* Tinatanggal ang default margin ng browser sa buong page.
+       Ginagamit ito para dumikit ang content sa gilid ng screen. */
+}
+
+p{  
+ /* padding:10px;  
+    Naglalagay ng 10px space sa loob ng paragraph (sa lahat ng sides). */
+
+ /* margin:10px;  
+    Naglalagay ng 10px space sa labas ng paragraph (lahat ng sides). */
+
+ /* border:2px solid black;  
+    Naglalagay ng border na 2px kapal, solid style, kulay black. */
+
+ /* padding-top:10px;  
+    Space sa loob sa itaas lang. */
+
+ /* padding-left:10px;  
+    Space sa loob sa kaliwa lang. */
+
+ /* padding:25px 10px;  
+    Shorthand:
+    25px = top & bottom
+    10px = left & right */
+
+ /* padding:10px 0px 25px 10px;  
+    Shorthand 4 values:
+    top right bottom left */
+
+ /* border-bottom:5px solid gold;  
+    Border sa baba lang. */
+
+ /* border-top:10px solid red;  
+    Border sa taas lang. */
+
+ /* border-right:15px solid blue;  
+    Border sa kanan lang. */
+
+ /* border-left:10px solid green;  
+    Border sa kaliwa lang. */
+
+    margin-top:10px;  
+    /* Space sa labas sa itaas ng paragraph. */
+
+    margin:20px 10px;   
+    /* Shorthand margin:
+       20px = top & bottom
+       10px = left & right
+       NOTE: Override nito ang margin-top:10px sa taas. */
+
+    padding:5px;  
+    /* 5px space sa loob ng paragraph (lahat ng sides). */
+
+    background: powderblue;  
+    /* Background color ng paragraph. */
+
+    border:2px solid tomato;  
+    /* Buong border:
+       2px kapal
+       solid line
+       kulay tomato */
+
+    border-radius: 20px;  
+    /* Ginagawang rounded ang corners ng border (20px curve). */
+}
