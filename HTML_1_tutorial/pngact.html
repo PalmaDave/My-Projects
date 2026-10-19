@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport=device-width,initial-scale=1.0">
+  <title>user input with fields</title>
+</head>
+<body>
+  <h2>User input</h2>
+  <label for="name">Enter your name</label>
+  <input type="text" id="name" placeholder="Your name"><br>
+  <label for="color">Enter your favorite color</label>
+  <input type="text" id="color" placeholder="Your favorite color"><br>
+
+  <button onclick="displayGreeting()">Submit</button>
+  <button onclick="clearFields()">Clear</button>
+
+  <h3 id="greeting"></h3>
+
+  <script>
+ 
+   function displayGreeting(){
+    const name = document.getElementById("name").value;
+    const color = document.getElementById("color").value;
+    
+    if( name =="" || color ==""){
+      alert("please fill in both fields");
+      return;
+    }
+   document.getElementById("greeting").textContent = "Hello," + name + " Your favorite color is " + color + ".";
+   console.log("Hello, "+ name + " Your favorite color is" + color + ".");
+  }
+
+  function clearFields(){
+   document.getElementById("name").value = "";
+   document.getElementById("color").value = "";
+   document.getElementById("greeting").textContent = "";
+  }
+   
+  </script>
+  </body>
+  </html>
+ 

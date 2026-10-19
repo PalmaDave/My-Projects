@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+    background: #0f172a;
+    color:#e2e8f0;
+    min-height:100vh;
+}
+
+.app-container{
+    max-width: 1250px;
+    margin:0;
+    padding:40px 25px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+.form-card{
+    background: #1e293b;
+    padding:25px;
+    border-radius: 15px;
+    border:1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.form-card h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+    color:#f8fafc;
+}
+
+.form-group{
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color:#cbd5e1;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background: #0f172a;
+    color:white;
+    outline:none;
+    font-size: 15px;
+    transition:0.2s;   
+}
+
+.form-group input:focus{
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(97, 165, 250, 0.12);
+}
+
+.form-group input::placeholder{
+    color:#64748b;
+}
+
+#btn-save{
+    width: 100%;
+    padding:12px;
+    border: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btn-save:hover{
+    background:#2563eb;
+    transform:translateY(-1px);
+}
+
+.btn-secondary {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 9px;
+    background: transparent;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #334155;
+}
+
+.dashboard-card{
+    background: #1e293b;
+    padding:25px;
+    border-radius: 16px;
+    border:1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-bottom: 25px;
+}
+
+.stat-box{
+    background: #0f172a;
+    border:1px solid #334155;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat-label{
+    display: block;
+    font-size: 13px;
+    color:#94a3b8;
+    margin-bottom:8px;
+}
+
+.stat-value{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color:#f8fafc;
+}
+
+.table-controls{
+    display: flex;
+    gap:12px;
+    margin-bottom: 20px;
+}
+
+.table-controls input,
+.table-controls select{
+    padding: 12px 14px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background: #0f172a;
+    color:#e2e8f0;
+    outline:none;
+}
+
+.table-controls input{
+    flex: 1;
+}
+
+.table-controls select{
+    width:180px;
+}
+
+.table-controls input:focus,
+.table-controls select:focus{
+    border-color: #60a5fa;
+}
+
+.table-wrapper{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background: #0f172a;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+    color:#94a3b8;
+    border-bottom: 1px solid #334155;
+}
+
+td{
+    padding: 15px 14px;
+    border-bottom: 1px solid #334155;
+    color:#e2e8f0;
+    font-size: 14px;
+}
+
+tbody tr{
+    transition:0.2s;
+}
+
+tbody tr:hover{
+    background: #263449;
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-pass {
+    background: #064e3b;
+    color: #6ee7b7;
+}
+
+.badge-fail {
+    background: #7f1d1d;
+    color: #fca5a5;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 7px 11px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background: #1d4ed8;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #2563eb;
+}
+
+.btn-delete {
+    background: #991b1b;
+    color: white;
+    margin-left: 5px;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+}
+
+@media (max-width:850px){
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .app-container{
+        padding:20px 15px;
+    }
+    .table-controls{
+        flex-direction: column;
+    }
+    .table-controls select{
+        width:100%;
+    }
+
+    .form-card
+    .dashboard-card{
+        padding:20px;
+    }
+}

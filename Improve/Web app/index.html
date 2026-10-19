@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Para maging responsive sa mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <!-- Ikinokonekta ang CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <h1>Login</h1>
+
+        <form id="login-form">
+
+            <!-- Email -->
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <!-- Dito lalabas ang email error -->
+                <p id="email-error" class="error-message"></p>
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="form-group">
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+
+                <!-- Dito lalabas ang password error -->
+                <p id="password-error" class="error-message"></p>
+
+            </div>
+
+
+            <!-- Login button -->
+            <button type="submit">Login</button>
+
+        </form>
+
+
+        <!-- Register link -->
+        <p class="register-text">
+            Don't have an account?
+            <a href="#">Register</a>
+        </p>
+
+    </main>
+
+
+    <!-- Ikinokonekta ang JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+body{  /* Ina-apply ang background styles sa buong webpage */
+
+   /* background-color: tomato; */  
+   /* Naglalagay ng solid background color (kulay kamatis) */
+
+   background-image: url('oikawapng.webp');  
+   /* Naglalagay ng image bilang background */
+
+   background-repeat: round;  
+   /* Inuulit ang image at ina-adjust ang size para magkasya nang walang putol */
+
+   /* background-repeat: repeat-x; */  
+   /* Inuulit ang image pahalang (left to right) */
+
+   /* background-repeat: repeat-y; */  
+   /* Inuulit ang image patayo (top to bottom) */
+
+   /* background-repeat: space; */  
+   /* Inuulit ang image na may equal spacing sa pagitan */
+
+   /* background-repeat: no-repeat; */  
+   /* Hindi inuulit ang image, isang beses lang lalabas */
+
+   /* background-attachment: fixed; */  
+   /* Nakafix ang background kahit mag-scroll ang page */
+
+   /* background-position: center top; */  
+   /* Ilalagay ang image sa gitna horizontally at sa taas vertically */
+
+   /* background-position: center 0%; */  
+   /* Katulad ng center top, pero gamit ang percentage */
+
+   /* background-size: auto; */  
+   /* Default size ng image (original size niya) */
+
+   /* background-size: contain; */  
+   /* I-aadjust ang image para magkasya sa screen nang hindi nacu-cut */
+
+   /* background-size: cover; */  
+   /* Sasakupin ang buong screen kahit may ma-crop na part */
+
+   /* background-size: 500px 500px; */  
+   /* Manual na pag-set ng width at height ng background image */
+
+   /* background: url('oikawapng.webp') no-repeat center center/cover; */  
+   /* Shorthand property – pinagsama ang:
+      background-image
+      background-repeat
+      background-position
+      background-size
+      sa iisang linya */
+
+   /* background-image: url('https://i.ytimg.com/vi/lF0RK4uj3sQ/hq720.jpg'); */  
+   /* Gumagamit ng online image bilang background */
+
+}

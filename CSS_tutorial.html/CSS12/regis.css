@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana;
+    background-color: #f0f2f5; /* Light gray background para lumutang yung form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #1877f2;
+    margin-top: 40px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Konting shadow para premium feel */
+    width: 100%;
+    max-width: 400px; /* Para hindi sobrang haba sa screen */
+    margin: 20px;
+}
+
+/* Para maganda tignan ang mga inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante 'to para hindi lumampas ang width */
+}
+

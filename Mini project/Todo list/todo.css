@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:rgb(54, 15, 145);
+}
+
+.todo h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo{
+    background-color:lightblue;
+    width:30%;
+    margin:40px;
+    padding:40px;
+    border-radius:30px;
+
+}
+
+.todo img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+#list-container ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.row{ /*element na may class */
+   display: flex; /*ginagawang magkatabi */
+   align-items:center; /*nilalagay sa gitna */
+   justify-content:space-between; /*nilalayo yung unang item tska pangalawang item */
+   border-radius: 30px; /*ginagawang bilog*/
+   margin-bottom: 50px; /*nagbibigay ng espasyo sa ibaba ng row */
+   padding-left: 25px;  /*nagbibigay ng espasyo sa gilid*/
+}
+
+input{
+    flex:1;/*kinukuha lahat ng bakanteng space*/
+    border:none; /*tinatanggal yung border ng input*/
+    outline:none; /*may blue outline */
+    padding:5px;
+    font-size:15px;
+}
+
+button{
+    background-color: red;
+    color:#ffffff;
+    border:none;
+    padding:12px 40px;
+    font-size:10px;
+    outline:none;
+    cursor: pointer;
+    border-radius:15px;
+}

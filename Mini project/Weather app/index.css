@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background:linear-gradient(135deg, #00c6ff, #0072ff);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    color:white;
+    width:360px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-box{
+    display:flex;
+    gap:5px;
+    margin-bottom: 25px;/* Nagdaragdag ng space sa labas ng ibabang bahagi ng element */
+}
+
+input{
+    flex:1; /*Kinukuha yung bakanteng space*/
+    padding:10px 15px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+button{
+    background: #0072ff;
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;  /*Kapal ng Text*/
+    transition: background 0.3s;
+}
+
+button:hover{
+    background: #0056b3;
+}
+
+#temperature{
+    font-size: 64px; /*Laki ng text*/
+    font-weight: bold;
+    margin:15px 0;
+}
+
+#description{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.location{
+    margin-bottom:20px;/* Naglalagay ng 20px na space sa ibaba */
+}
+
+#city-name{
+    font-size:30px;
+    font-weight:bold;
+}
+
+#date{
+    font-size:14px;  /*Pinaliit yung text*/
+    opacity:0.8;/* Binabawasan ang opacity (nagiging bahagyang transparent) */
+}
+
+.current-weather{
+    margin:20px 0;
+}
+
+#weather-icon{
+    width:100px;
+    height:100px;
+}
+
+.extra-metrics{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.metric-item{
+    display: flex;
+    flex-direction: column;/*ginagawang patayo*/
+}
+
+.label{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#humidity,
+#wind-speed{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.hidden{
+    display:none;
+}
+
+.input:focus{
+    border:2px solid #0072ff;
+}

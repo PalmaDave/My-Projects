@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Student Management</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Student Grade Management System</h2>
+        </header>
+        <main class="main-content">
+            <section class="form-card">
+                <h3>Add / Edit</h3>
+                <form id="student-form">
+                    <input type="hidden" id="student-id">
+
+                    <div class="form-group">
+                        <label for="student-name">Full Name</label>
+                        <input type="text" id="student-name" required placeholder="Yato Garcia">
+                   
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course & Section</label>
+                        <input type="text" id="course" required placeholder="BSCS 4E">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prelim">Prelim Grade</label>
+                        <input type="number" id="prelim" min="50" max="100" step="0.1" required> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="midterm">Midterm Grade</label>
+                        <input type="number" id="midterm" min="50" max="100" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="final">Final Grade</label>
+                        <input type="number" id="final" min="50" max="100" step="0.1" required>
+                    </div>
+
+                    <button type="submit" id="btn-save">Save Student Record</button>
+                    <button id="black">Dark Mode</button>
+                </form>
+            </section>
+
+            <section class="dashboard-card">
+                <div class="stats-grid">
+                    <div class="stats-box">
+                      <span class="stat-label">Total Student</span>
+                      <span id="stat-total" class="stat-value">0</span>  
+                    </div>
+
+                    <div class="stat-box">
+                      <span class="stat-label">Class Average</span>
+                      <span id="stat-avg" class="stat-value">0.00</span>  
+                    </div>
+
+                    <div class="stat-box">
+                        <span class="stat-label">Passing Rate</span>
+                        <span id="stat-pass" class="stat-value">0%</span>
+                    </div>
+                </div>
+
+                <div class="table-controls">
+                    <input type="text" id="search-in" placeholder="Search student name......">
+                    <select id="filter-status">
+                        <option value="all">All Record</option>
+                        <option value="passed">Passed Only</option>
+                        <option value="failed">Failed Only</option>
+                    </select>
+                </div>
+
+                <div class="table-wrapper">
+                    <tabel>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Average</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-table-body">
+                        </tbody>
+                    </tabel>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+   <script src="index.js"></script>
+</html>

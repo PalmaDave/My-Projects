@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f5f5f5;
+    font-family:Arial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav{
+    background-color:rgb(19, 18, 18);
+    padding:5px 5px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    transition:background-color 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+nav:hover{
+    background-color:hotpink;
+}
+
+.brand-container{
+    display:inline-block;
+}
+
+.brand-title{
+    display:inline-block;
+    margin:0;
+    color:white;
+    font-family:Verdana;
+    position:relative;
+    top: -15px;
+    left:15px;
+}
+
+.links-container{
+    float:right;
+    position:relative;
+}
+
+.link{
+    color:#ffff;
+    text-decoration:none;
+    font-family:Arial;
+    margin:0 15px;
+    transition:0.2s;
+}
+
+.link:hover{
+    color:gold;
+}
+
+.btn-link{
+    background-color:gold;
+    padding:10px 10px;
+    text-decoration:none;
+    font-family:Verdana;
+    border-radius:10px;
+    color:white;
+}
+
+.btn-link:hover{
+    padding:10px 20px;
+}
+
+    table,th,td{
+    border:1px solid;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+    background-color:blue;
+    color:white;
+    transition: 0.2s linear;
+}
+
+th{
+    background-color:rgb(128, 0, 122);
+}
+
+td:hover{
+    background-color:red;
+}
+
+th:hover{
+    background-color:green;
+}
+
+input:not([type="checkbox"]), textarea {
+    width: 50%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    background-color: gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Verdana;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(19, 18, 18);
+    color: white;
+}
+
+h2 {
+    color: rgb(19, 18, 18);
+    border-bottom: 2px solid gold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 20px 20px 5px 20px;
+    color: rgb(19, 18, 18);
+}
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition:transform 0.2s,background-color 0.5s;
+}
+
+section:hover{
+    transform:scale(1.05);
+    background-color:skyblue;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+:root {
+  color-scheme: light dark; /* Required */
+  --bg-color: light-dark(#161515, #ffff);
+  --text-color: light-dark(#ffff, #e0e0e0);
+}

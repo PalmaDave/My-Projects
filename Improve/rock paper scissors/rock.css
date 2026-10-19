@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /* Import ng font na Varela Round */
+
+
+/* =====================================================
+   GLOBAL STYLES
+===================================================== */
+
+*{ /* Lahat ng elements */
+
+    margin:0; /* Tanggal default space sa labas */
+
+    padding:0; /* Tanggal default space sa loob */
+
+    box-sizing:border-box; /* Kasama padding/border sa size ng element */
+
+}
+
+
+
+/* =====================================================
+   BODY (BACKGROUND + CENTER NG GAME)
+===================================================== */
+
+body{
+
+    height:100vh; /* Buong screen height */
+
+    display:flex; /* Gamit flexbox */
+
+    align-items:center; /* Center vertically */
+
+    justify-content:center; /* Center horizontally */
+
+    background:rgba(40, 6, 230, 0.925); /* Blue background */
+
+}
+
+
+
+/* =====================================================
+   SCOREBOARD (USER + CPU SCORE)
+===================================================== */
+
+.scoreboard{
+
+    position:absolute; /* Nakalutang sa page */
+
+    top:30px; /* 30px mula taas */
+
+    display:flex; /* Inline ang score */
+
+    gap:50px; /* Layo ng User at CPU */
+
+    color:white; /* White text */
+
+}
+
+
+/* Text size ng score */
+.scoreboard h2{
+
+    font-size:1.5rem;
+
+}
+
+
+
+/* =====================================================
+   MAIN GAME BOX
+===================================================== */
+
+.container{
+
+    padding:2rem 7rem; /* Space loob ng box */
+
+    background:#fff; /* White background */
+
+    border-radius:15px; /* Bilugan corners */
+
+    box-shadow:0 5px 10px rgba(0,0,0,0.1); /* Shadow effect */
+
+}
+
+
+
+/* =====================================================
+   RESULT IMAGES (USER & CPU)
+===================================================== */
+
+.result_images{
+
+    display:flex; /* magkatabi */
+
+    column-gap:7rem; /* pagitan ng images */
+
+}
+
+
+
+/* =====================================================
+   SHAKE ANIMATION (USER)
+===================================================== */
+
+.container.start .user_result{
+
+    transform-origin:left; /* pivot point ng ikot */
+
+    animation:userShake 0.7s ease infinite; /* shake animation */
+
+}
+
+
+/* Animation ng user */
+@keyframes userShake{
+
+    50%{
+
+        transform:rotate(10deg); /* ikot pakaliwa */
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SHAKE ANIMATION (CPU)
+===================================================== */
+
+.container.start .cpu_result{
+
+    transform-origin:left; /* pivot point */
+
+    animation:cpuShake 0.7s ease infinite; /* shake animation */
+
+}
+
+
+/* Animation ng CPU */
+@keyframes cpuShake{
+
+    50%{
+
+        transform:rotate(-10deg); /* ikot pakanan */
+
+    }
+
+}
+
+
+
+/* =====================================================
+   IMAGE SIZE
+===================================================== */
+
+.result_images img{
+
+    width:100px; /* size ng images */
+
+}
+
+
+/* User image default */
+.user_result img{
+
+    transform:rotate(0deg); /* straight lang */
+
+}
+
+
+/* CPU image (baliktad para facing user) */
+.cpu_result img{
+
+    transform:rotate(0deg) rotateY(180deg);
+
+}
+
+
+
+/* =====================================================
+   RESULT TEXT
+===================================================== */
+
+.result{
+
+    text-align:center; /* gitna */
+
+    font-size:2rem; /* laki ng text */
+
+    color:red; /* kulay red */
+
+    margin-top:1rem; /* space sa taas */
+
+}
+
+
+
+/* =====================================================
+   OPTIONS (ROCK PAPER SCISSORS)
+===================================================== */
+
+.option_images img{
+
+    width:50px; /* size ng icons */
+
+}
+
+
+/* container ng options */
+.option_images{
+
+    display:flex; /* inline */
+
+    align-items:center; /* vertical center */
+
+    justify-content:space-between; /* pantay pantay */
+
+}
+
+
+
+/* kapag animation active, disable clicks */
+.container.start .option_images{
+
+    pointer-events:none; /* hindi clickable */
+
+}
+
+
+
+/* bawat option */
+.option_image{
+
+    display:flex; /* column layout */
+
+    flex-direction:column; /* image + text vertical */
+
+    align-items:center; /* center */
+
+    opacity:0.5; /* dim default */
+
+    cursor:pointer; /* pointer hand */
+
+    transition:opacity 0.3s ease; /* smooth hover */
+
+}
+
+
+
+/* hover effect */
+.option_image:hover{
+
+    opacity:1; /* full visible */
+
+}
+
+
+
+/* active selection */
+.option_image.active{
+
+    opacity:1;
+
+}
+
+
+
+/* image only */
+.option_image img{
+
+    pointer-events:none; /* para click sa parent */
+
+}
+
+
+
+/* label text */
+.option_image p{
+
+    color:#f00808f3; /* red text */
+
+    font-size:1.235rem; /* size */
+
+    margin-top:1rem; /* space */
+
+    pointer-events:none; /* hindi clickable */
+
+    text-decoration:underline; /* underline text */
+
+}
+
+
+
+/* =====================================================
+   RESET BUTTON
+===================================================== */
+
+.reset-btn{
+
+    position:absolute; /* floating button */
+
+    bottom:40px; /* sa baba */
+
+    padding:12px 24px; /* loob */
+
+    border:none; /* walang border */
+
+    border-radius:10px; /* bilog */
+
+    background:white; /* white bg */
+
+    color:black; /* black text */
+
+    font-size:1rem; /* size */
+
+    cursor:pointer; /* pointer */
+
+    transition:0.3s; /* smooth hover */
+
+}
+
+
+
+/* hover effect */
+.reset-btn:hover{
+
+    transform:scale(1.05); /* lumalaki konti */
+
+}

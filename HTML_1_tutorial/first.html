@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Ipinapahayag na HTML5 ang ginagamit na bersyon ng dokumento -->
+<html lang="en">
+<!-- Ito ang pinaka-ugat (root) ng HTML file, naka-set sa English ang wika -->
+
+<head>
+<!-- Head section: dito nilalagay ang title at style ng webpage -->
+
+    <meta charset="UTF-8">
+    <!-- Para maipakita ng tama ang mga letra at simbolo -->
+
+    <title>Webpage</title>
+    <!-- Ito ang title na makikita sa browser tab -->
+
+    <style>
+    /* Internal CSS: ginagamit para ayusin ang itsura ng HTML */
+
+        table, tr, th, td {
+            /* Nilalagyan ng border ang table at mga laman nito */
+            border-width: 1px;        /* Kapal ng border */
+            border-color: blue;      /* Kulay ng border */
+            border-style: solid;      /* Uri ng border */
+            border-collapse: collapse;/* Inaalis ang dobleng border */
+        }
+
+        caption {
+            /* Style para sa pamagat ng table */
+            text-align: center;       /* Gitna ang text */
+            caption-side: top;         /* Nasa itaas ang caption */
+            border: 3px solid blue;   /* May border ang caption */
+            padding: 5px;              /* Espasyo sa loob */
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- Body: lahat ng makikita ng user sa webpage -->
+
+    <p>Welcome to my Page</p>
+    <!-- Paragraph o talata -->
+
+    <img src="karma.jpg" width="50" alt="Image">
+    <!-- Naglalagay ng larawan; width ang sukat -->
+
+    <table>
+    <!-- Table: ginagamit para sa data na naka-ayos -->
+
+        <caption>My Interest</caption>
+        <!-- Pamagat ng table -->
+
+        <tr>
+        <!-- Table row (isang hanay) -->
+            <th rowspan="2">Name</th>
+            <!-- Table header na sumasakop sa 2 rows -->
+
+            <th colspan="3">Hobby</th>
+            <!-- Table header na sumasakop sa 3 columns -->
+        </tr>
+
+        <tr>
+        <!-- Ikalawang row para sa mga hobby -->
+            <th>Basketball</th>
+            <th>Football</th>
+            <th>Movie</th>
+        </tr>
+
+        <tr>
+        <!-- Row ng data -->
+            <td>Dave</td>
+            <td>2-0</td>
+            <td>2-0</td>
+            <td>Haikyuu</td>
+        </tr>
+
+        <tr>
+        <!-- Isa pang row ng data -->
+            <td>Party</td>
+            <td>2-0</td>
+            <td>2-0</td>
+            <td>Death Note</td>
+        </tr>
+
+    </table>
+
+    <h2>Home</h2>
+    <!-- Heading o pamagat -->
+
+    <h2>About</h2>
+    <!-- Isa pang heading -->
+
+    <a href="tutorial2.html" target="_blank">About</a>
+    <!-- Link papunta sa ibang page, bubukas sa bagong tab -->
+
+    <a href="tutorial3.html" target="_blank">Home</a>
+    <!-- Isa pang link -->
+
+    <p>My Interest</p>
+    <!-- Pamagat ng listahan -->
+
+    <ul>
+    <!-- Unordered list (bullet) -->
+        <li>Kumain</li>
+        <li>Naglalaro</li>
+        <li>Natutulog</li>
+    </ul>
+
+    <p>Ginagawa ko sa school</p>
+    <!-- Pamagat ng ordered list -->
+
+    <ol>
+    <!-- Ordered list (numbered) -->
+        <li>Pumasok sa school</li>
+        <li>Natuto sa prof</li>
+        <li>Umuwi ng may alam</li>
+    </ol>
+
+    <audio controls loop>
+    <!-- Audio player na may control at paulit-ulit -->
+        <source src="bruh.mp3" type="audio/mpeg">
+        <!-- Audio file -->
+    </audio>
+
+    <br><br>
+    <!-- Line break para sa espasyo -->
+
+    <video controls width="200">
+    <!-- Video player -->
+        <source src="multo.mp4" type="video/mp4">
+        <!-- Video file -->
+    </video>
+
+</body>
+</html>
+<!-- Katapusan ng HTML file -->

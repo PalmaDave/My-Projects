@@ -1,0 +1,156 @@
+
+/* Tinatanggal ang default spacing ng browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main page */
+body {
+    min-height: 100vh;
+
+    /* Ginagawang flex container */
+    display: flex;
+
+    /* Center left/right */
+    justify-content: center;
+
+    /* Center up/down */
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    /* Space kapag maliit ang screen */
+    padding: 20px;
+}
+
+
+/* Login box */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Login title */
+h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* Container ng bawat input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* Email at password inputs */
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+/* Kapag naka-click/focus ang input */
+input:focus {
+    outline: none;
+
+    border-color: #007bff;
+}
+
+
+/* Error messages */
+.error-message {
+    display: none;
+
+    color: #d00000;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+
+/* Login button */
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Kapag tinapat ang mouse sa button */
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Register text */
+.register-text {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.register-text a {
+    color: #007bff;
+
+    text-decoration: none;
+}
+
+
+/* Responsive design para sa maliit na screen */
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}

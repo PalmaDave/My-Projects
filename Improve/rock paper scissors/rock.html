@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Sinasabi sa browser na HTML5 ang gamit -->
+
+<html lang="en">
+<!-- Simula ng HTML document -->
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Para responsive sa phone at tablet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Pangalan ng tab sa browser -->
+    <title>Game | ROCK PAPER SCISSORS</title>
+
+    <!-- Ikonekta ang CSS file -->
+    <link rel="stylesheet" href="rock.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         SCOREBOARD
+    ========================== -->
+
+    <!-- Lalagyan ng score ng User at CPU -->
+    <div class="scoreboard">
+
+        <!-- Score ng User -->
+        <h2>
+            User:
+            <span id="user-score">0</span>
+        </h2>
+
+        <!-- Score ng CPU -->
+        <h2>
+            CPU:
+            <span id="cpu-score">0</span>
+        </h2>
+
+    </div>
+
+
+
+    <!-- =========================
+         MAIN GAME CONTAINER
+    ========================== -->
+
+    <section class="container">
+
+        <!-- Buong game area -->
+        <div class="result_field">
+
+            <!-- Images ng User at CPU -->
+            <div class="result_images">
+
+                <!-- Image ng User -->
+                <span class="user_result">
+
+                    <img src="image/rock.png">
+
+                </span>
+
+                <!-- Image ng CPU -->
+                <span class="cpu_result">
+
+                    <img src="image/rock.png"/>
+
+                </span>
+
+            </div>
+
+
+
+            <!-- =========================
+                 RESULT TEXT
+            ========================== -->
+
+            <!-- Dito lalabas ang panalo -->
+            <div class="result">
+
+                Let's play !!!
+
+            </div>
+
+
+
+            <!-- =========================
+                 MGA CHOICES
+            ========================== -->
+
+            <div class="option_images">
+
+                <!-- ROCK -->
+
+                <span class="option_image active">
+
+                    <!-- Larawan ng bato -->
+                    <img src="image/rock.png" alt="">
+
+                    <!-- Pangalan -->
+                    <p>Bato</p>
+
+                </span>
+
+
+
+                <!-- PAPER -->
+
+                <span class="option_image active">
+
+                    <!-- Larawan ng papel -->
+                    <img src="image/paper.png" alt="">
+
+                    <!-- Pangalan -->
+                    <p>Papel</p>
+
+                </span>
+
+
+
+                <!-- SCISSORS -->
+
+                <span class="option_image active">
+
+                    <!-- Larawan ng gunting -->
+                    <img src="image/gunting.png" alt="">
+
+                    <!-- Pangalan -->
+                    <p>Gunting</p>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESET BUTTON
+    ========================== -->
+
+    <!-- Kapag pinindot tatawagin ang resetGame() -->
+    <button
+        class="reset-btn"
+        onclick="resetGame()">
+
+        Reset Game
+
+    </button>
+
+
+
+    <!-- =========================
+         JAVASCRIPT FILE
+    ========================== -->
+
+    <!-- Ikonekta ang rock.js -->
+    <script src="rock.js"></script>
+
+
+</body>
+</html>

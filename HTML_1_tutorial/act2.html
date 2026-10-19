@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport=width=device-width,initial-scale=10">
+    <title>Selection Operator</title>
+    </head>
+    <body style="background-color: lightblue;">
+    <h2>Selection Operator</h2>
+
+    <label for="num1">First number</label>
+    <input type="number" id ="num1"><br>
+    <label for="num2">Second number</label>
+    <input type="number" id="num2"><br>
+
+   <button id = "Add" onclick="Add()">Addition</button>
+   <button id = "Sub" onclick="Sub()">Subtraction</button>
+   <button id = "Multiply" onclick="Multiply()">Multiplication</button>
+   <button id = "Divide" onclick="Divide()">Divide</button>
+   <button id = "Clear" onclick="Clear()">clearFields</button>
+    <p id="result"></p>
+
+    <script>
+    
+    function Add(){
+     let n1=Number(document.getElementById("num1").value);
+     let n2=Number(document.getElementById("num2").value);
+     let result = n1 + n2;
+
+     document.getElementById("result").innerText = "Result" + result;
+     document.getElementById("result").style.color = "red";
+     document.getElementById("result").style.fontSize = "40px";
+     document.getElementById("Add").style.backgroundColor= "yellow";
+    }
+
+    function Sub(){
+      let n1=Number(document.getElementById("num1").value);
+      let n2=Number(document.getElementById("num2").value);
+      let result = n1 - n2;
+      
+      document.getElementById("result").innerText = "Result" + result;
+      document.getElementById("result").style.color = "red";
+      document.getElementById("result").style.fontSize = "40px";
+      document.getElementById("Sub").style.backgroundColor = "yellow";
+    }
+     
+   function Multiply(){
+    let n1=Number(document.getElementById("num1").value);
+    let n2=Number(document.getElementById("num2").value);
+    let result = n1 * n2;
+
+    document.getElementById("result").innerText = "Result" + result;
+    document.getElementById("result").style.color = "red";
+    document.getElementById("result").style.fontSize = "40px";
+    document.getElementById("Multiply").style.backgroundColor = "yellow"
+   }
+
+  function Divide(){
+    let n1=Number(document.getElementById("num1").value);
+    let n2=Number(document.getElementById("num2").value);
+    let result = n1/n2;
+
+    document.getElementById("result").innerText = "Result" + result;
+    document.getElementById("result").style.color = "red";
+    document.getElementById("result").style.fontSize = "40px";
+    document.getElementById("Divide").style.backgroundColor = "yellow";
+  }
+   
+   function Clear(){
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+    document.getElementById("result").textContent = " ";
+   }
+
+   </script>
+   </body>
+   </html>

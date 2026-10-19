@@ -1,0 +1,113 @@
+body{
+    background:url('isagi.jpg')no-repeat center center / cover;
+    margin:0;
+    padding-top:60px;
+}
+
+    table,th,td{
+    border:1px solid;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+    background-color:blue;
+    color:white;
+    transition: linear 1s;
+}
+
+th{
+    background-color:rgb(128, 0, 122);
+}
+
+td:hover{
+    background-color:red;
+}
+
+th:hover{
+    background-color:green;
+}
+
+header{
+   margin-top:20px;
+   padding:20px;
+   box-shadow:3px 3px 5px;
+   background-color:deeppink;
+   border-radius:5px;
+   transition:linear 1s;
+   animation: mypage 1.6s infinite;
+}
+
+@keyframes mypage {
+     0% { opacity: 0; }
+     50% { opacity: 1; }
+     100% { opacity: 0; }
+}
+
+header:hover{
+    background-color:skyblue;
+}
+
+nav{ 
+    background-color:pink;
+    padding:10px;
+    border-bottom:3px solid tomato;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition:background-color 1s;
+}
+
+nav:hover{
+    background-color:hotpink;
+}
+
+article{
+    background:white;
+    padding:20px;
+    margin-top:25px;
+    border:2px solid black;
+    border-radius:10px;
+    transition:transform 0.2s,background-color 0.5s;
+}
+
+article:hover{
+  transform:scale(1.05);
+  background-color:hotpink;
+}
+
+section{
+    background-color:lightblue;
+    padding:15px;
+    border-left:5px solid orange;
+    margin-top: 25px;
+    transition:transform 0.2s,background-color 0.5s;
+    border-radius:10px;
+}
+section:hover{
+    transform:scale(1.05);
+    background-color:red;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border:2px solid gray;
+    margin-top: 20px;
+    transition:transform 0.5s;
+    box-shadow:2px 2px 5px 3px black,-2px 2px 5px 3px aquamarine;
+    border-radius:10px;
+}
+form:hover{
+    transform:scale(1.05);
+}
+
+table{
+    padding: 10px;
+    background-color:powderblue;
+    margin-bottom: 20px;
+}
+
+footer{
+    box-shadow:2px 2px 5px 2px red,-2px 2px 5px 2px blue inset;
+    border-radius:10px;
+}
